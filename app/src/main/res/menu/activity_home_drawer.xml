@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Configuración"
+        android:id="@+id/nav_setting"
+        android:visible="false">
+        <menu>
+            <item
+                android:id="@+id/nav_users"
+                android:icon="@drawable/ic_person_black_24dp"
+                android:title="@string/menu_users" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_profile" />
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single" android:id="@+id/nav_menu_main">
+        <item android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home"/>
+        <item
+            android:id="@+id/nav_clients"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="@string/menu_clients" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow" />
+
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="@string/menu_logout" />
+    </group>
+
+</menu>
