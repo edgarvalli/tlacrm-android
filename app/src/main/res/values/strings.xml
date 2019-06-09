@@ -25,4 +25,5 @@
     <string name="app_label">Buscador</string>
     <string name="search_hint">Realiza tu busqueda</string>
     <string name="menu_clients">Clientes</string>
+    <string name="title_activity_new_user">NewUserActivity</string>
 </resources>

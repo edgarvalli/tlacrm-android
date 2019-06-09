@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home">
+    tools:context=".NewUserActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -16,21 +16,10 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="@color/colorPrimary"
-            app:titleTextColor="@color/white"
-            android:theme="@style/ToolbarBackArrowWhite"
-            app:title="@string/app_name"
             app:popupTheme="@style/PopupOverlay" />
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_home" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@drawable/ic_add_white_24dp" />
+    <include layout="@layout/content_new_user" />
 
 </android.support.design.widget.CoordinatorLayout>

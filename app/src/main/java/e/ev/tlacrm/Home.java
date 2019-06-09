@@ -64,8 +64,7 @@ public class Home extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                fabClickAction();
             }
         });
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -77,6 +76,20 @@ public class Home extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         run();
+    }
+
+    private void fabClickAction() {
+
+        String view = sp.getString("view", "home");
+        
+        switch (view) {
+
+            case "users":
+                Intent intent = new Intent(getApplicationContext(),NewUserActivity.class);
+                startActivity(intent);
+                break;
+        }
+
     }
 
     private void run(){
